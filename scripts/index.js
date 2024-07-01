@@ -1,11 +1,12 @@
 const menuItemsExpand = document.getElementsByClassName('menu-expand');
 const subMenu = document.getElementsByClassName('submenu');
 const arrow = document.getElementsByClassName('arrow');
-
 const navigation = document.getElementById('navigation');
 const switchFixMenu = document.getElementById('fix-switch');
 const btnMenu = document.getElementById('btn-menu');
 const main = document.getElementById('main');
+const approveCount = document.getElementById('approve-count');
+const notificationCount = document.getElementById('notification-count');
 
 for (let i = 0; i < menuItemsExpand.length; i += 1) {
   menuItemsExpand[i].addEventListener('click', () => {
@@ -53,3 +54,10 @@ function checkFixMenu() {
 }
 
 checkFixMenu();
+
+function setNotification(notification, approve) {
+  notificationCount.textContent = notification;
+  approveCount.textContent = approve;
+}
+
+setNotification(3, 5);
