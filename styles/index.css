@@ -95,6 +95,29 @@ body {
   rotate: -45deg;
 }
 
+.main {
+  min-height: calc(100vh - 160px);
+}
+
+.footer {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.developer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.developer__img {
+  width: 40px;
+}
+
 .menu {
   position: absolute;
   top: 80px;
