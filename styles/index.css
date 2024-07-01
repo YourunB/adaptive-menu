@@ -47,7 +47,7 @@ body {
   z-index: 200;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
   .btn-menu:hover {
     opacity: 1;
     transform: scale(1.1);
@@ -63,7 +63,7 @@ body {
 }
 
 .btn-menu::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 16px;
   left: 0;
@@ -75,7 +75,7 @@ body {
 }
 
 .btn-menu::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 30px;
   left: 0;
@@ -213,28 +213,28 @@ body {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
   position: absolute;
-  content: "";
+  content: '';
   height: 16px;
   width: 16px;
   left: 2px;
   bottom: 2px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #A6C5FF;
+  background-color: #a6c5ff;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #A6C5FF;
+  box-shadow: 0 0 1px #a6c5ff;
 }
 
 input:checked + .slider:before {
@@ -322,7 +322,7 @@ input:checked + .slider:before {
 
 .small .submenu {
   background: white;
-  color: #A6C5FF;
+  color: #a6c5ff;
   font-size: 12px;
   border-radius: 4px;
   margin: 0;
@@ -363,13 +363,13 @@ input:checked + .slider:before {
 
 *::-webkit-scrollbar-thumb {
   border-radius: 4px;
-  background-color: #A6C5FF;
+  background-color: #a6c5ff;
 }
 *::-webkit-scrollbar-thumb:hover {
-  background-color: #A6C5FF;
+  background-color: #a6c5ff;
 }
 *::-webkit-scrollbar-thumb:active {
-  background-color: #A6C5FF;
+  background-color: #a6c5ff;
 }
 
 @media (max-width: 480px) {

@@ -12,12 +12,12 @@ for (let i = 0; i < menuItemsExpand.length; i += 1) {
   menuItemsExpand[i].addEventListener('click', () => {
     if (subMenu[i].classList.contains('submenu_show')) {
       subMenu[i].classList.remove('submenu_show');
-      arrow[i].classList.remove('arrow_up')
+      arrow[i].classList.remove('arrow_up');
     } else {
       subMenu[i].classList.add('submenu_show');
-      arrow[i].classList.add('arrow_up')
+      arrow[i].classList.add('arrow_up');
     }
-  })
+  });
 }
 
 btnMenu.addEventListener('click', () => {
