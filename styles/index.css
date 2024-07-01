@@ -105,6 +105,9 @@ body {
   border-radius: 4px;
   max-width: 320px;
   width: 100%;
+  transition: 0.5s;
+  height: calc(100vh - 160px);
+  overflow-y: auto;
 }
 
 .menu__item {
@@ -116,10 +119,37 @@ body {
   cursor: pointer;
 }
 
+.menu__item:nth-of-type(9) {
+  padding-top: 10px;
+  border-top: solid 1px white;
+}
+
+.menu__item:nth-of-type(11) {
+  padding-bottom: 10px;
+  border-bottom: solid 1px white;
+}
+
 .icon {
   width: 35px;
 }
 
+.arrow {
+  width: 12px;
+  transition: 0.5s;
+}
+
+.arrow_up {
+  transform: rotate(180deg);
+}
+
 .submenu {
   width: 100%;
+  transform: translateX(-500px);
+  position: absolute;
+}
+
+.show {
+  position: static;
+  transform: translateX(0);
+  transition: 0.5s;
 }
