@@ -11,14 +11,22 @@ html {
   box-sizing: inherit;
 }
 
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
 body {
   padding: 0;
   margin: 0;
 }
 
 .header {
+  position: relative;
+  height: 80px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
 }
 
@@ -85,4 +93,33 @@ body {
 .btn-menu_cliked::after {
   top: 20px;
   rotate: -45deg;
+}
+
+.menu {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  padding: 10px;
+  margin: 0;
+  border: solid 1px white;
+  border-radius: 4px;
+  max-width: 320px;
+  width: 100%;
+}
+
+.menu__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.icon {
+  width: 35px;
+}
+
+.submenu {
+  width: 100%;
 }
