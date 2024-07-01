@@ -1,10 +1,16 @@
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
+  background: black;
+  color: white;
 }
 
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+.logo__img {
+  width: 40px;
 }
