@@ -1,4 +1,3 @@
-const menu = document.getElementsByClassName('menu');
 const menuItemsExpand = document.getElementsByClassName('menu-expand');
 const subMenu = document.getElementsByClassName('submenu');
 const arrow = document.getElementsByClassName('arrow');

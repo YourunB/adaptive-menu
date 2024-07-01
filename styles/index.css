@@ -119,12 +119,10 @@ body {
   width: 40px;
 }
 
-.menu {
+.navigation {
   position: absolute;
   top: 80px;
   left: 0;
-  padding: 10px;
-  margin: 0;
   background: white;
   color: gray;
   border-radius: 4px;
@@ -133,6 +131,18 @@ body {
   transition: 0.5s;
   height: calc(100vh - 160px);
   overflow-y: auto;
+}
+
+.stores {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.menu {
+  padding: 10px;
+  margin: 0;
 }
 
 .menu__item {
