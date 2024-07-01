@@ -11,6 +11,78 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
 .logo__img {
   width: 40px;
+}
+
+.btn-menu {
+  opacity: 0.7;
+  background: none;
+  transition: 1s;
+  border: none;
+  padding: 0;
+  height: 50px;
+  width: 40px;
+  position: relative;
+  z-index: 200;
+}
+
+@media (hover:hover) {
+  .btn-menu:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    cursor: pointer;
+    overflow: hidden;
+    transition: 1s;
+  }
+}
+
+.btn-menu:active {
+  transition: 0.2s;
+  transform: scale(0.9);
+}
+
+.btn-menu::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 0;
+  width: 40px;
+  height: 5px;
+  background: white;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.btn-menu::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 40px;
+  height: 5px;
+  background: white;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.btn-menu_cliked::before {
+  top: 20px;
+  rotate: 45deg;
+}
+
+.btn-menu_cliked::after {
+  top: 20px;
+  rotate: -45deg;
 }
